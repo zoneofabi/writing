@@ -1,0 +1,166 @@
+.mainPageTitle{
+    color: crimson;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    margin-top: 3vw;
+}
+
+.categorySection{
+    border: 2px solid rgb(0, 85, 0);
+}
+
+.categorySection h2{
+    color: rgb(198, 198, 198);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+}
+
+.articleGallery{
+    border: 1px dashed blue;
+    display: grid;
+}
+
+.articleGallery_OneStream{
+    border: 1px dashed blue;
+        display: grid;
+}
+
+.docArticle h2{
+    color: chocolate;
+}
+
+.docArticle h3{
+    color: red;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.docArticle p{
+    color: bisque;
+    margin-left: 2%;
+    margin-right: 2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.docArticle ul{
+    color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+.writingNavCont{
+    border: 1px solid red;
+    color: bisque;
+    text-align: center;
+
+}
+
+.writingNavCont h5{
+    border: 2px dashed red;
+    width:max-content;
+    display: block;
+    margin: auto;
+    margin-top: 0.5%;
+    margin-bottom: 0%;
+    padding: 4px;
+}
+
+.writingDocs_navbar{
+    border: 2px solid transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(80, 3, 3);
+    
+}
+
+.writingDocs_navbar a{
+    border: 2px dashed orange;
+    background-color: brown;
+    
+    color: bisque;
+    margin: 5px;
+    padding: 3px;
+}
+
+
+
+
+/*desktop query*/
+@media only screen and (min-width: 600px){
+
+    .articleGallery {
+        border: 1px dashed blue;
+        grid-template-columns: 50% 50%;
+    }
+
+        .articleGallery_OneStream {
+            border: 1px dashed blue;
+            grid-template-columns: 100%;
+        }
+
+    .docArticle{
+        border: 2px solid rgb(209, 122, 0);
+        margin: 10px;
+      
+    }
+
+    .docArticle_imageGallery{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .docArticle_imageCont{
+        border: 1px solid orange;
+        overflow: hidden;
+    }
+
+    .docArticle_imageCont img{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+/*Mobile query*/
+@media only screen and (max-width: 600px){
+    .articleGallery {
+        border: 1px dashed orange;
+        grid-template-columns: 100%;
+    }
+
+         .articleGallery_OneStream {
+             border: 1px dashed blue;
+             grid-template-columns: 100%;
+         }
+
+    .docArticle {
+        border: 2px solid grey;
+    }
+    
+    .docArticle_imageGallery {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .docArticle_imageCont {
+        border: 1px solid red;
+        width: 50%;
+        overflow: hidden;
+    }
+
+    .docArticle_imageCont img{
+        width: 100%;
+    }
+
+}
